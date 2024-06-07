@@ -2,12 +2,14 @@ package com.catusoft.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-public class CronProjectApplication {
+@EnableScheduling
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CronProjectApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 
 }
